@@ -2,6 +2,7 @@ package com.hyfly.milet.demo.annotation.controller;
 
 import com.hyfly.milet.demo.pojo.User;
 import com.hyfly.milet.demo.repository.UserRepository;
+import com.hyfly.milet.demo.utils.CheckUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -9,6 +10,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
+
+import javax.validation.Valid;
+
 
 @RestController
 @RequestMapping("/userA")
@@ -44,15 +48,31 @@ public class UserController {
         return repository.findAll();
     }
 
-    @PostMapping("/")
-    public Mono<User> createUser(@RequestBody User user) {
+    @GetMapping("/age/{start}/{end}")
+    public Flux<User> getUserByAge(@PathVariable("start") int start, @PathVariable("end") int end) {
+        return repository.findByAgeBetween(start, end);
+    }
 
+    @GetMapping("/old")
+    public Flux<User> oldUser() {
+        return repository.oldUser();
+    }
+
+    @GetMapping(value = "/stream/age/{start}/{end}", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
+    public Flux<User> streamGetUserByAge(@PathVariable("start") int start, @PathVariable("end") int end) {
+        return repository.findByAgeBetween(start, end);
+    }
+
+    @PostMapping("/")
+    public Mono<User> createUser(@Valid @RequestBody User user) {
         user.setId(null);
+        CheckUtil.checkName(user.getName());
         return repository.save(user);
     }
 
     @PutMapping("/{id}")
-    public Mono<ResponseEntity<User>> updateUser(@PathVariable("id") String id, @RequestBody User user) {
+    public Mono<ResponseEntity<User>> updateUser(@PathVariable("id") String id, @Valid @RequestBody User user) {
+        CheckUtil.checkName(user.getName());
         return repository
                 .findById(id)
                 .flatMap(u -> {
