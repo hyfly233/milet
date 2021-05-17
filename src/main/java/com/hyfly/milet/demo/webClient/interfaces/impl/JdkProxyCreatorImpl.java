@@ -35,8 +35,7 @@ public class JdkProxyCreatorImpl implements ProxyCreator {
             public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
                 MethodInfo methodInfo = extractMethodInfo(method, args);
 
-                Object ret = handler.invokeRest(methodInfo);
-                return null;
+                return handler.invokeRest(methodInfo);
             }
         });
     }
