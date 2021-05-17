@@ -22,4 +22,8 @@ public class MethodInfo {
     private Map<String, Object> arg;
 
     private Mono<?> body;
+
+    private boolean isReturnFlux;
+
+    private Class<?> returnElementType;
 }
