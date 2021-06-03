@@ -1,4 +1,4 @@
-package com.hyfly.milet.demo.demo_common.webClient.bean;
+package com.hyfly.milet.demo.webClient.bean;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

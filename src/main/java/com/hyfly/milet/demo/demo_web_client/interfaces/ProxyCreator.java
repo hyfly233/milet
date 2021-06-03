@@ -1,4 +1,4 @@
-package com.hyfly.milet.demo.demo_common.webClient.interfaces;
+package com.hyfly.milet.demo.webClient.interfaces;
 
 public interface ProxyCreator {
     Object createProxy(Class<?> type);

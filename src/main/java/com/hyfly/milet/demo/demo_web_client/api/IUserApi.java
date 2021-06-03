@@ -1,7 +1,7 @@
-package com.hyfly.milet.demo.demo_common.webClient.api;
+package com.hyfly.milet.demo.webClient.api;
 
-import com.hyfly.milet.demo.demo_common.webClient.annotation.ApiServer;
-import com.hyfly.milet.demo.demo_common.webClient.pojo.WUser;
+import com.hyfly.milet.demo.webClient.annotation.ApiServer;
+import com.hyfly.milet.demo.webClient.pojo.WUser;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;

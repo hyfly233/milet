@@ -1,4 +1,4 @@
-package com.hyfly.milet.demo.demo_common.webClient.pojo;
+package com.hyfly.milet.demo.webClient.pojo;
 
 import lombok.Data;
 

@@ -1,10 +1,10 @@
-package com.hyfly.milet.demo.demo_common.webClient.interfaces.impl;
+package com.hyfly.milet.demo.webClient.interfaces.impl;
 
-import com.hyfly.milet.demo.demo_common.webClient.annotation.ApiServer;
-import com.hyfly.milet.demo.demo_common.webClient.bean.MethodInfo;
-import com.hyfly.milet.demo.demo_common.webClient.bean.ServerInfo;
-import com.hyfly.milet.demo.demo_common.webClient.interfaces.ProxyCreator;
-import com.hyfly.milet.demo.demo_common.webClient.interfaces.RestHandler;
+import com.hyfly.milet.demo.webClient.annotation.ApiServer;
+import com.hyfly.milet.demo.webClient.bean.MethodInfo;
+import com.hyfly.milet.demo.webClient.bean.ServerInfo;
+import com.hyfly.milet.demo.webClient.interfaces.ProxyCreator;
+import com.hyfly.milet.demo.webClient.interfaces.RestHandler;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpMethod;
 import org.springframework.web.bind.annotation.*;

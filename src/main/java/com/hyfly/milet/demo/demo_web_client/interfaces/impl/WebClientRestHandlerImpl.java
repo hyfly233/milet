@@ -1,8 +1,8 @@
-package com.hyfly.milet.demo.demo_common.webClient.interfaces.impl;
+package com.hyfly.milet.demo.webClient.interfaces.impl;
 
-import com.hyfly.milet.demo.demo_common.webClient.bean.MethodInfo;
-import com.hyfly.milet.demo.demo_common.webClient.bean.ServerInfo;
-import com.hyfly.milet.demo.demo_common.webClient.interfaces.RestHandler;
+import com.hyfly.milet.demo.webClient.bean.MethodInfo;
+import com.hyfly.milet.demo.webClient.bean.ServerInfo;
+import com.hyfly.milet.demo.webClient.interfaces.RestHandler;
 import org.springframework.http.MediaType;
 import org.springframework.web.reactive.function.client.WebClient;
 
