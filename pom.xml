@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.hyfly</groupId>
-    <artifactId>milet</artifactId>
+    <artifactId>milet-flux</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>milet</name>
+    <name>milet-flux</name>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>14</java.version>
