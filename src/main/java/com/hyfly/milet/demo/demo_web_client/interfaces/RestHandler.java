@@ -1,7 +1,7 @@
-package com.hyfly.milet.demo.webClient.interfaces;
+package com.hyfly.milet.demo.demo_web_client.interfaces;
 
-import com.hyfly.milet.demo.webClient.bean.MethodInfo;
-import com.hyfly.milet.demo.webClient.bean.ServerInfo;
+import com.hyfly.milet.demo.demo_web_client.bean.MethodInfo;
+import com.hyfly.milet.demo.demo_web_client.bean.ServerInfo;
 
 public interface RestHandler {
 

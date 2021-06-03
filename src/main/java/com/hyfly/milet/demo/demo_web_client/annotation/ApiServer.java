@@ -1,4 +1,4 @@
-package com.hyfly.milet.demo.webClient.annotation;
+package com.hyfly.milet.demo.demo_web_client.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

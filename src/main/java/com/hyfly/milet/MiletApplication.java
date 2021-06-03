@@ -1,8 +1,8 @@
 package com.hyfly.milet;
 
-import com.hyfly.milet.demo.demo_common.webClient.api.IUserApi;
-import com.hyfly.milet.demo.demo_common.webClient.interfaces.ProxyCreator;
-import com.hyfly.milet.demo.demo_common.webClient.interfaces.impl.JdkProxyCreatorImpl;
+import com.hyfly.milet.demo.demo_web_client.api.IUserApi;
+import com.hyfly.milet.demo.demo_web_client.interfaces.ProxyCreator;
+import com.hyfly.milet.demo.demo_web_client.interfaces.impl.JdkProxyCreatorImpl;
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

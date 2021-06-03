@@ -1,7 +1,7 @@
-package com.hyfly.milet.demo.webClient.controller;
+package com.hyfly.milet.demo.demo_web_client.controller;
 
-import com.hyfly.milet.demo.webClient.api.IUserApi;
-import com.hyfly.milet.demo.webClient.pojo.WUser;
+import com.hyfly.milet.demo.demo_web_client.api.IUserApi;
+import com.hyfly.milet.demo.demo_web_client.pojo.WUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
