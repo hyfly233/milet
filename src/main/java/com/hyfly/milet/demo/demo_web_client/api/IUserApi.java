@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
-@ApiServer("http://localhost:8080/userA")
+@ApiServer("http://localhost:23333/userA")
 public interface IUserApi {
 
     @GetMapping("/all")
